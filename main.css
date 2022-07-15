@@ -1,7 +1,76 @@
-@import "node_modules/reset-css/reset.css";
-@import "node_modules/normalize.css/normalize.css";
+@import "/node_modules/reset-css/reset.css";
+@import "/node_modules/normalize.css/normalize.css";
+body {
+  font-family: "Raleway", sans-serif;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.header__container {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 19px;
+  padding-bottom: 30px;
+}
+
+.header-nav {
+  align-items: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  flex-wrap: wrap;
+}
+
+.header-nav__item {
+  position: relative;
+  font-size: 0.875rem;
+  margin-left: 1.563em;
+  margin-right: 1.563em;
+  margin-top: 0.2em;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #214e41;
+  font-weight: 700;
+}
+.header-nav__item::after {
+  content: "";
+  position: absolute;
+  top: auto;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #214e41;
+  transition: width 0.2s ease-in-out;
+}
+.header-nav__item:hover::after {
+  width: 100%;
+}
+
+.functional-nav {
+  gap: 25px;
+}
+
+.header__cta-button {
+  padding: 10px 12px;
+  text-align: center;
+  background-color: #43806c;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border: 1px solid #43806c;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+.header__cta-button:hover {
+  cursor: pointer;
+  background-color: #214e41;
 }/*# sourceMappingURL=main.css.map */
