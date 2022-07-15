@@ -1,0 +1,7 @@
+@import "node_modules/reset-css/reset.css";
+@import "node_modules/normalize.css/normalize.css";
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}/*# sourceMappingURL=main.css.map */

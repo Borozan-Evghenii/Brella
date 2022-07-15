@@ -1,0 +1,20 @@
+//Normalize , Reset Library
+
+@import "node_modules/reset-css/reset.css";
+@import "node_modules/normalize.css/normalize.css";
+
+// General Stettings
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+//Colors
+$accent: #214e41;
+$accent-light: #43806c;
+$gray: #757575;
+$white: #fff;
+
+
