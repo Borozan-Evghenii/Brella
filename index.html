@@ -33,13 +33,24 @@
             <li><a href="#" class="header-nav__item">blog</a></li>
           </ul>
 
-          <div class="functional-nav">
+          <div class="functional-nav flex">
             <button class="header__cta-button">Request a demo</button>
-            <button class="header__auth-button">login</button>
-            <button class="header__lang-button">en</button>
+            <div class="header__auth">
+              <a href="#" class="header__auth__item">Login</a>
+            </div>
+            <select class="header__lang-button" name="lang">
+              <img src="./assets/logo.svg" alt="" />
+              <option class="header__lang-button__item" value="en">EN</option>
+              <option class="header__lang-button__item" value="ro">RO</option>
+              <option class="header__lang-button__item" value="cz">CZ</option>
+            </select>
           </div>
         </nav>
       </div>
     </header>
+
+    <div class="hero">
+      <div class="container flex"></div>
+    </div>
   </body>
 </html>

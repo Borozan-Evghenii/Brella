@@ -73,4 +73,21 @@ body {
 .header__cta-button:hover {
   cursor: pointer;
   background-color: #214e41;
+}
+
+.header__lang-button {
+  padding: 10px 5px 10px 14px;
+  border: none;
+  font-size: 13px;
+  color: #214e41;
+  font-weight: 700;
+  outline: none;
+}
+.header__lang-button__item {
+  font-size: 13px;
+  color: #214e41;
+  font-weight: 700;
+}
+.header__lang-button:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

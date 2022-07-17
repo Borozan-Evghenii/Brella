@@ -85,3 +85,20 @@ $white: #fff;
     background-color: $accent;
   }
 }
+
+.header__lang-button {
+  padding: 10px 5px 10px 14px;
+  border: none;
+  font-size: 13px;
+  color: $accent;
+  font-weight: 700;
+  outline: none;
+  &__item {
+    font-size: 13px;
+    color: $accent;
+    font-weight: 700;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
