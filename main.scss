@@ -3,9 +3,17 @@
 @import "/node_modules/reset-css/reset.css";
 @import "/node_modules/normalize.css/normalize.css";
 
+//Colors
+$accent: #214e41;
+$accent-light: #43806c;
+$gray: #757575;
+$white: #fff;
+
 // General Stettings
 body {
   font-family: "Raleway", sans-serif;
+  color: $accent;
+  line-height: 1.5;
 }
 .container {
   max-width: 1200px;
@@ -17,12 +25,32 @@ body {
   display: flex;
 }
 
-//Colors
-$accent: #214e41;
-$accent-light: #43806c;
-$gray: #757575;
-$white: #fff;
+.section {
+  padding-top: 120px;
+}
 
+h2 {
+  max-width: 470px;
+  font-size: 2.25rem;
+  margin-bottom: 0.833em;
+  color: $accent;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+.button-underline {
+  font-weight: 700;
+  display: inline-flex;
+  color: $accent;
+  text-decoration: none;
+  font-size: 1.125rem;
+  padding-bottom: 0.556em;
+  margin-top: 30px;
+  border-bottom: 2px solid $accent;
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+//Header
 .header__container {
   justify-content: space-between;
   align-items: center;
@@ -75,6 +103,7 @@ $white: #fff;
   text-align: center;
   background-color: $accent-light;
   color: $white;
+  text-decoration: none;
   font-weight: 700;
   font-size: 0.875rem;
   border: 1px solid $accent-light;
@@ -101,4 +130,197 @@ $white: #fff;
   &:hover {
     cursor: pointer;
   }
+}
+
+.header__auth {
+  display: flex;
+  align-self: center;
+  color: $accent;
+  font-size: 0.875rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+//Hero section
+
+.hero {
+  height: 100vh;
+  &__container {
+    align-items: center;
+    width: 100%;
+  }
+  &-content {
+    width: 100%;
+  }
+  &__h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+    max-width: 500px;
+    align-self: flex-start;
+    margin-bottom: 1.111em;
+  }
+}
+
+.subscribe__label {
+  font-weight: 700;
+  font-size: 1rem;
+  color: $accent;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.subscribe {
+  margin-top: 1em;
+}
+
+.subscribe__input {
+  width: 280px;
+  font-size: 0.875rem;
+  padding-top: 1.429em;
+  padding-left: 1.429em;
+  padding-bottom: 1.429em;
+  outline: none;
+  font-weight: 700;
+  border: 1px solid transparent;
+  border-radius: 6px 0 0 6px;
+}
+
+.subscribe__button {
+  padding: 1.429em;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: $white;
+  background-color: $accent;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  &:hover {
+    cursor: pointer;
+    background-color: $accent-light;
+  }
+}
+
+//Features
+.feature {
+  transform: translateY(-50%);
+  color: $accent;
+}
+.feature__content {
+  flex-wrap: wrap;
+  background-color: $white;
+  padding: 3.125em;
+  border-radius: 6px;
+  gap: 1em;
+  box-shadow: 0px 4px 4px rgba(#000000, 0.15);
+}
+
+.feature__item {
+  max-width: 350px;
+  align-items: flex-start;
+  gap: 0.625em;
+  &__heading {
+    font-size: 1.02rem;
+    margin-bottom: 0.438em;
+  }
+}
+
+.feature__item__image {
+  width: 45px;
+}
+
+.feature__item__text {
+  font-size: 0.875rem;
+}
+
+//About
+
+.about-content {
+  max-width: 50%;
+  color: $accent;
+  &__descriptor {
+    text-transform: uppercase;
+    font-size: 0.813rem;
+    margin-bottom: 1.538em;
+  }
+  &__description {
+    max-width: 470px;
+    font-size: 1.125rem;
+    color: #757575;
+  }
+}
+
+figure {
+  text-align: right;
+}
+.about__container {
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+//services
+
+.serv-container {
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-container {
+  background-color: #e3eeed;
+  color: $accent-light;
+}
+
+.services {
+  display: flex;
+  svg {
+    width: 24px;
+    color: $accent;
+  }
+}
+
+.services-list {
+  width: 70%;
+}
+
+.services-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  a {
+    font-size: 2rem;
+    margin-right: 0.625em;
+    color: $accent-light;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      font-weight: 700;
+    }
+  }
+}
+
+.descr-container {
+  color: $white;
+  align-items: center;
+  justify-content: center;
+  background-color: $accent;
+}
+
+.descriptor {
+  text-transform: uppercase;
+  font-size: 0.813rem;
+  margin-bottom: 1.538em;
+}
+
+.text-container {
+  width: 70%;
+  font-size: 1.25rem;
+}
+
+.delimiter {
+  display: block;
+  margin-top: 40px;
 }

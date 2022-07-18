@@ -34,12 +34,9 @@
           </ul>
 
           <div class="functional-nav flex">
-            <button class="header__cta-button">Request a demo</button>
-            <div class="header__auth">
-              <a href="#" class="header__auth__item">Login</a>
-            </div>
+            <a href="#" class="header__cta-button">Request a demo</a>
+            <a href="#" class="header__auth">Login</a>
             <select class="header__lang-button" name="lang">
-              <img src="./assets/logo.svg" alt="" />
               <option class="header__lang-button__item" value="en">EN</option>
               <option class="header__lang-button__item" value="ro">RO</option>
               <option class="header__lang-button__item" value="cz">CZ</option>
@@ -49,8 +46,228 @@
       </div>
     </header>
 
-    <div class="hero">
-      <div class="container flex"></div>
-    </div>
+    <section class="hero flex" style="background-image: url('assets/hero.jpg')">
+      <div class="container flex hero__container">
+        <div class="hero-content">
+          <h1 class="hero__h1">
+            Give your team peace of mind with supplemental health insurance from
+            Brella.
+          </h1>
+          <form action="get">
+            <label class="subscribe__label" for="find">I'm wondering...</label>
+            <div class="subscribe flex">
+              <input
+                id="find"
+                type="text"
+                class="subscribe__input"
+                placeholder="how Brella's plan works"
+              />
+              <button class="subscribe__button">Find out</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="container feature__container flex">
+        <div class="feature__content flex">
+          <div class="feature__item flex">
+            <img
+              class="feature__item__img"
+              src="./assets/umbrela.png"
+              alt="logo"
+            />
+            <div class="feature__item__content">
+              <p class="feature__item__heading">More coverage</p>
+              <p class="feature__item__text">
+                Brella covers 13,000+ injuries and illnesses from concussions to
+                cancer.
+              </p>
+            </div>
+          </div>
+          <div class="feature__item flex">
+            <img
+              class="feature__item__img"
+              src="./assets/cecked.png"
+              alt="logo"
+            />
+            <div class="feature__item__content">
+              <p class="feature__item__heading">More coverage</p>
+              <p class="feature__item__text">
+                Brella covers 13,000+ injuries and illnesses from concussions to
+                cancer.
+              </p>
+            </div>
+          </div>
+          <div class="feature__item flex">
+            <img
+              class="feature__item__img"
+              src="./assets/case.png"
+              alt="logo"
+            />
+            <div class="feature__item__content">
+              <p class="feature__item__heading">More coverage</p>
+              <p class="feature__item__text">
+                Brella covers 13,000+ injuries and illnesses from concussions to
+                cancer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section">
+      <div class="container about__container flex">
+        <div class="about-content">
+          <p class="about-content__descriptor">Why Brella?</p>
+          <h2 class="about-content__heading">
+            Today, any health insurance deductible can feel like a high
+            deductible.
+          </h2>
+          <p class="about-content__description">
+            Brella's supplemental health plan enhances your health benefit
+            strategy to ensure that health hardships don't become financial
+            burdens.
+          </p>
+          <a href="#" class="about-content__button button-underline"
+            >See our plan</a
+          >
+        </div>
+        <figure>
+          <img src="./assets/statistic.png" alt="statistic" />
+          <figcaption>2020 individual averages (Source: KFF)</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section services">
+      <div class="services-container serv-container">
+        <div class="services-list">
+          <p class="descriptor">brella brings</p>
+          <ul class="services-list-container">
+            <li class="services-list__item">
+              <a href="#">Customizable benefits</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </li>
+            <li class="services-list__item">
+              <a href="#">Paperless install & admin</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </li>
+            <li class="services-list__item">
+              <a href="#">Effortless enrollment</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </li>
+            <li class="services-list__item">
+              <a href="#">Easy claims experience</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </li>
+            <li class="services-list__item">
+              <a href="#">Customizable benefits</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </li>
+            <li class="services-list__item">
+              <a href="#">Customizable benefits</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="descr-container serv-container">
+        <div class="text-container">
+          <p class="services-descr">
+            Every Brella plan comes with a benefit for Moderate, Severe, and
+            Catastrophic conditions. Employees can select the payout amounts
+            that fit their needs and their budget.
+            <span class="delimiter"></span>
+            Employers can fund part or all of the premiums—or offer Brella as a
+            voluntary benefit. The choice is up to you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-plan section">
+      <div class="container our-plan__container"></div>
+    </section>
   </body>
 </html>
