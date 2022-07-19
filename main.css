@@ -244,7 +244,7 @@ figure {
   align-items: center;
 }
 
-.serv-container {
+.services-container {
   display: flex;
   width: 50%;
   height: 100vh;
@@ -252,58 +252,69 @@ figure {
   align-items: center;
 }
 
-.services-container {
-  background-color: #e3eeed;
-  color: #43806c;
-}
-
 .services {
   display: flex;
 }
 .services svg {
   width: 24px;
-  color: #214e41;
-}
-
-.services-list {
-  width: 70%;
-}
-
-.services-list-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.services-list-container a {
-  font-size: 2rem;
-  margin-right: 0.625em;
-  color: #43806c;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-.services-list-container a:hover {
-  font-weight: 700;
-}
-
-.descr-container {
-  color: #fff;
-  align-items: center;
-  justify-content: center;
-  background-color: #214e41;
 }
 
 .descriptor {
   text-transform: uppercase;
+  display: inline-block;
   font-size: 0.813rem;
   margin-bottom: 1.538em;
-}
-
-.text-container {
-  width: 70%;
-  font-size: 1.25rem;
 }
 
 .delimiter {
   display: block;
   margin-top: 40px;
+}
+
+.services-list {
+  background-color: #e3eeed;
+}
+.services-list__container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.services-list__item {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0.313em 0;
+  padding: 0;
+  gap: 10px;
+  background-color: transparent;
+  color: #43806c;
+  font-weight: 700;
+  border: none;
+}
+.services-list__item:hover {
+  cursor: pointer;
+  color: #214e41;
+}
+.services-list .services-list__arrow {
+  color: transparent;
+  transition: fill 0.2s ease-in-out;
+}
+
+.services-active-item .services-list__arrow {
+  color: #43806c;
+}
+
+.services-description {
+  background-color: #214e41;
+  color: #fff;
+}
+.services-description__content {
+  max-width: 480px;
+  display: none;
+}
+.services-description__text {
+  font-size: 1.25rem;
+}
+
+.services-description-active {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
